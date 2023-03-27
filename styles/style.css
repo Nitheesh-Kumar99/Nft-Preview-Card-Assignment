@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--clr-blue-main-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  --clr-softblue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-blue-main-bg: hsl(217, 54%, 11%);
+  --clr-blue-card-bg: hsl(216, 50%, 16%);
+  --clr-blue-line: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--clr-blue-card-bg);
+  width: 375px;
+  height: auto;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  gap: 20px;
+}
+h1 {
+  color: var(--clr-white);
+  font-size: 23px;
+}
+.equ-description {
+  color: var(--clr-softblue);
+}
+.ethandtime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.et {
+  color: var(--clr-cyan);
+}
+.clk {
+  color: var(--clr-softblue);
+}
+hr {
+  width: 100%;
+  border: 1px solid var(--clr-blue-line);
+}
+.leftimg {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.rightimg {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-img {
+  border-radius: 50%;
+  width: 2rem;
+  border: 2px solid var(--clr-white);
+}
+p {
+  color: var(--clr-softblue);
+}
+.aut {
+  color: var(--clr-white);
+}
+.aut:hover {
+  color: var(--clr-cyan);
+  cursor: pointer;
+}
+
+h1:hover {
+  color: var(--clr-cyan);
+  cursor: pointer;
+}
+.nft-image {
+  border-radius: 1rem;
+  position: relative;
+}
+.img-container {
+  border-radius: 1rem;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 328px;
+  height: 328px;
+  background-color: var(--clr-cyan);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.img-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
